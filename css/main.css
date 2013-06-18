@@ -1,0 +1,606 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.2;
+	  font-family: 'Lato', sans-serif;
+	  background: #f0f9fb;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #549eff;
+}
+
+a:hover {
+  color: #cb251a;
+}
+
+a:visited {
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body { width: 100%; height: 100%; position: fixed; background: url('../img/img-noise.png'); }
+#main { width: 100%; height: 100%; }
+
+/* CONTSTANTS
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Lato', sans-serif;
+
+#282828 - Black
+#cb251a - Red
+#549eff - Blue
+#a3abaf - Grey
+#f0f9fb - Off-white
+*/
+
+/* HEADERS */
+
+h1 { padding: 0; margin: 0 auto; font-weight: 700; padding: 16px 0; }
+h1 sup { font-weight: 300; font-size: 0.35em; top: -1.5em; }
+
+/* SECTIONS */
+#intro { width: 100%; height: 20em; margin-top: 10% }
+#intro h3 { padding: 0; margin: 0 auto; font-weight: 300; padding: 16px 0; color: #f0f9fb; opacity: 0.5; }
+#intro p { font-family: 'Ubunto Mono', monospace; font-size: 1em; padding: 0; margin: 0 auto; margin-top: 8px; color: #f0f9fb; opacity: 0.5; }
+
+#message { display: none; position: relative; font-size: 4em; }
+
+#work { width: 100%;; height: 40em; padding: 16px 0; margin: 0 auto; }
+#info { width: 100%; height: 40em; background: #282828; }
+#contact { width: 100%; height: 40em; background: #f0f9fb;}
+
+
+#intro h1, #info h1 { color: #f0f9fb; }
+#contact h1, #work h1 { color: #282828; }
+
+
+.item { width: 19em; height: 13em; float: left; position: relative; }
+.item .title { width: 19em; height: 3em; background-color: #282828; color: #f0f9fb; font-weight: 700; text-align: center; z-index: 101; position: absolute; }
+.item .cover { width: 19em; height: 13em; background-color: #549eff; z-index: 103; position: absolute; }
+.item .cover:hover { background-color: #cb251a; cursor: pointer; }
+.item .desc { width: 19em; height: 10em; background-color: #282828; color: #f0f9fb; z-index: 102; position: absolute; }
+
+
+
+section { text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* icon stufff */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-linkedin, .icon-steam, .icon-vimeo2, .icon-twitter, .icon-facebook, .icon-mail, .icon-embed, .icon-code, .icon-radio-unchecked, .icon-radio-checked, .icon-arrow-up, .icon-arrow-down, .icon-loop, .icon-heart, .icon-heart-2, .icon-star, .icon-star-2, .icon-star-3, .icon-contrast, .icon-attachment, .icon-cloud-download, .icon-user, .icon-expand, .icon-contract, .icon-spinner, .icon-screen, .icon-laptop, .icon-mobile, .icon-mobile-2, .icon-tag, .icon-stack, .icon-file, .icon-file-2, .icon-pencil, .icon-camera, .icon-play, .icon-camera-2, .icon-profile, .icon-location, .icon-location-2, .icon-notebook, .icon-box-remove, .icon-box-add, .icon-user-2, .icon-user-3, .icon-spinner-2, .icon-spinner-3, .icon-spinner-4, .icon-expand-2, .icon-contract-2, .icon-equalizer, .icon-settings, .icon-firefox, .icon-chrome, .icon-css3, .icon-html5, .icon-safari, .icon-checkbox-partial, .icon-checkbox-unchecked, .icon-arrow-right, .icon-arrow-left, .icon-cancel-circle, .icon-checkmark-circle, .icon-close, .icon-lock, .icon-cog, .icon-happy, .icon-pinterest, .icon-android, .icon-github, .icon-happy-2, .icon-thumbs-up, .icon-heart-broken, .icon-warning, .icon-checkmark, .icon-volume-increase, .icon-volume-mute, .icon-volume-mute-2, .icon-mail-2, .icon-facebook-2, .icon-feed, .icon-twitter-2, .icon-vimeo, .icon-github-2, .icon-github-3, .icon-github-4, .icon-flickr, .icon-apple, .icon-pinterest-2, .icon-IE, .icon-opera, .icon-question, .icon-notification, .icon-info, .icon-info-2, .icon-fire {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-linkedin:before {
+	content: "\e000";
+}
+.icon-steam:before {
+	content: "\e001";
+}
+.icon-vimeo2:before {
+	content: "\e002";
+}
+.icon-twitter:before {
+	content: "\e003";
+}
+.icon-facebook:before {
+	content: "\e004";
+}
+.icon-mail:before {
+	content: "\e005";
+}
+.icon-embed:before {
+	content: "\e006";
+}
+.icon-code:before {
+	content: "\e007";
+}
+.icon-radio-unchecked:before {
+	content: "\e008";
+}
+.icon-radio-checked:before {
+	content: "\e009";
+}
+.icon-arrow-up:before {
+	content: "\e00a";
+}
+.icon-arrow-down:before {
+	content: "\e00b";
+}
+.icon-loop:before {
+	content: "\e00c";
+}
+.icon-heart:before {
+	content: "\e00d";
+}
+.icon-heart-2:before {
+	content: "\e00e";
+}
+.icon-star:before {
+	content: "\e00f";
+}
+.icon-star-2:before {
+	content: "\e010";
+}
+.icon-star-3:before {
+	content: "\e011";
+}
+.icon-contrast:before {
+	content: "\e012";
+}
+.icon-attachment:before {
+	content: "\e013";
+}
+.icon-cloud-download:before {
+	content: "\e014";
+}
+.icon-user:before {
+	content: "\e015";
+}
+.icon-expand:before {
+	content: "\e016";
+}
+.icon-contract:before {
+	content: "\e017";
+}
+.icon-spinner:before {
+	content: "\e018";
+}
+.icon-screen:before {
+	content: "\e019";
+}
+.icon-laptop:before {
+	content: "\e01a";
+}
+.icon-mobile:before {
+	content: "\e01b";
+}
+.icon-mobile-2:before {
+	content: "\e01c";
+}
+.icon-tag:before {
+	content: "\e01d";
+}
+.icon-stack:before {
+	content: "\e01e";
+}
+.icon-file:before {
+	content: "\e01f";
+}
+.icon-file-2:before {
+	content: "\e020";
+}
+.icon-pencil:before {
+	content: "\e021";
+}
+.icon-camera:before {
+	content: "\e022";
+}
+.icon-play:before {
+	content: "\e023";
+}
+.icon-camera-2:before {
+	content: "\e024";
+}
+.icon-profile:before {
+	content: "\e025";
+}
+.icon-location:before {
+	content: "\e026";
+}
+.icon-location-2:before {
+	content: "\e027";
+}
+.icon-notebook:before {
+	content: "\e028";
+}
+.icon-box-remove:before {
+	content: "\e029";
+}
+.icon-box-add:before {
+	content: "\e02a";
+}
+.icon-user-2:before {
+	content: "\e02b";
+}
+.icon-user-3:before {
+	content: "\e02c";
+}
+.icon-spinner-2:before {
+	content: "\e02d";
+}
+.icon-spinner-3:before {
+	content: "\e02e";
+}
+.icon-spinner-4:before {
+	content: "\e02f";
+}
+.icon-expand-2:before {
+	content: "\e030";
+}
+.icon-contract-2:before {
+	content: "\e031";
+}
+.icon-equalizer:before {
+	content: "\e032";
+}
+.icon-settings:before {
+	content: "\e033";
+}
+.icon-firefox:before {
+	content: "\e034";
+}
+.icon-chrome:before {
+	content: "\e035";
+}
+.icon-css3:before {
+	content: "\e036";
+}
+.icon-html5:before {
+	content: "\e037";
+}
+.icon-safari:before {
+	content: "\e038";
+}
+.icon-checkbox-partial:before {
+	content: "\e039";
+}
+.icon-checkbox-unchecked:before {
+	content: "\e03a";
+}
+.icon-arrow-right:before {
+	content: "\e03b";
+}
+.icon-arrow-left:before {
+	content: "\e03c";
+}
+.icon-cancel-circle:before {
+	content: "\e03d";
+}
+.icon-checkmark-circle:before {
+	content: "\e03e";
+}
+.icon-close:before {
+	content: "\e03f";
+}
+.icon-lock:before {
+	content: "\e040";
+}
+.icon-cog:before {
+	content: "\e042";
+}
+.icon-happy:before {
+	content: "\e041";
+}
+.icon-pinterest:before {
+	content: "\e043";
+}
+.icon-android:before {
+	content: "\e044";
+}
+.icon-github:before {
+	content: "\e045";
+}
+.icon-happy-2:before {
+	content: "\e046";
+}
+.icon-thumbs-up:before {
+	content: "\e047";
+}
+.icon-heart-broken:before {
+	content: "\e048";
+}
+.icon-warning:before {
+	content: "\e049";
+}
+.icon-checkmark:before {
+	content: "\e04a";
+}
+.icon-volume-increase:before {
+	content: "\e04b";
+}
+.icon-volume-mute:before {
+	content: "\e04c";
+}
+.icon-volume-mute-2:before {
+	content: "\e04d";
+}
+.icon-mail-2:before {
+	content: "\e04e";
+}
+.icon-facebook-2:before {
+	content: "\e04f";
+}
+.icon-feed:before {
+	content: "\e050";
+}
+.icon-twitter-2:before {
+	content: "\e051";
+}
+.icon-vimeo:before {
+	content: "\e052";
+}
+.icon-github-2:before {
+	content: "\e053";
+}
+.icon-github-3:before {
+	content: "\e054";
+}
+.icon-github-4:before {
+	content: "\e055";
+}
+.icon-flickr:before {
+	content: "\e056";
+}
+.icon-apple:before {
+	content: "\e057";
+}
+.icon-pinterest-2:before {
+	content: "\e058";
+}
+.icon-IE:before {
+	content: "\e059";
+}
+.icon-opera:before {
+	content: "\e05a";
+}
+.icon-question:before {
+	content: "\e05b";
+}
+.icon-notification:before {
+	content: "\e05c";
+}
+.icon-info:before {
+	content: "\e05d";
+}
+.icon-info-2:before {
+	content: "\e05e";
+}
+.icon-fire:before {
+	content: "\e05f";
+}
